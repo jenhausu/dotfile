@@ -7,4 +7,7 @@ function sync_pull
 
 	# sync git config
 	cp ~/Documents/repository/dotfile/.gitconfig ~/.gitconfig
+
+	# sync vimrc
+	cp ~/Documents/repository/dotfile/.vimrc ~/.vimrc
 end
