@@ -3,3 +3,4 @@
 
 brew install youtube-dl
 brew install tig
+brew install xclean
