@@ -7,6 +7,7 @@ omf install xcode
 omf install gi
 omf install z
 omf install bang-bang
+omf install https://github.com/jhillyerd/plugin-git
 brew install jq
 omf install weather
 
