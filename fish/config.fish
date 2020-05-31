@@ -28,7 +28,3 @@ end
 thefuck --alias | source
 
 set LANG en_US.UTF-8
-
-cd ~/Documents/repository/brother-ios/
-git status
-
