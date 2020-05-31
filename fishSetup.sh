@@ -15,3 +15,4 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 brew install terminal-notifier
 fisher add franciscolourenco/done
 fisher add markcial/upto
+fisher add acomagu/fish-async-prompt
