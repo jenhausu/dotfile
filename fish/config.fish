@@ -28,3 +28,5 @@ end
 thefuck --alias | source
 
 set LANG en_US.UTF-8
+starship init fish | source
+

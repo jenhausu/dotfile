@@ -10,6 +10,7 @@ omf install bang-bang
 omf install https://github.com/jhillyerd/plugin-git
 brew install jq
 omf install weather
+omf install https://github.com/b4b4r07/enhancd
 
 # fisher
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish

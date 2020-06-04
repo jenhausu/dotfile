@@ -10,4 +10,10 @@ function sync_pull
 
 	# sync vimrc
 	cp ~/Documents/repository/dotfile/.vimrc ~/.vimrc
+
+	# hyper
+	cp ~/Documents/repository/dotfile/.hyper.js ~/.hyper.js
+
+	# starship
+	cp ~/Documents/repository/dotfile/starship.toml ~/.config/starship.toml
 end

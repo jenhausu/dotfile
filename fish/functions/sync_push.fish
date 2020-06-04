@@ -10,4 +10,10 @@ function sync_push
 
 	# vimrc
 	cp ~/.vimrc ~/Documents/repository/dotfile/
+
+	# hyper
+	cp ~/.hyper.js ~/Documents/repository/dotfile/
+
+	# space prompt
+	cp ~/.config/starship.toml ~/Documents/repository/dotfile/
 end
