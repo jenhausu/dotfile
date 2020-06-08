@@ -13,7 +13,9 @@
 	today = log --oneline --graph --since=8.hours
 	co = checkout
 	a = add
+	aa = add .
 	c = commit
+	ca = commit --amend
 	s = status
 	l = log --oneline --graph
 	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
