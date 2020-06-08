@@ -12,7 +12,8 @@
 	lgs = !"git shortlog --no-merges --graph --abbrev-commit master..."
 	today = log --oneline --graph --since=8.hours
 	co = checkout
-	br = branch
+	a = add
+	c = commit
 	s = status
 	l = log --oneline --graph
 	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
