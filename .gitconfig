@@ -5,8 +5,8 @@
 [core]
 	excludesfile = /Users/oyster/.gitignore_global
 [alias]
-    lg = !"git log --oneline --graph master.."
-    lg2 = !"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
+	lg = !"git log --oneline --graph master.."
+	lg2 = !"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 	lg3 = !"git log --graph --abbrev-commit --decorate --date=relative"
 	lg4 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgs = !"git shortlog --no-merges --graph --abbrev-commit master..."
@@ -15,7 +15,7 @@
 	br = branch
 	s = status
 	l = log --oneline --graph
-    b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
+	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
 	bd = !"git branch --color=always | fzf --multi --color=dark --cycle --border --ansi | sed 's/*//' | awk '{print $1}' | xargs git branch -d"
 [diff]
 	colorMoved = zebra
