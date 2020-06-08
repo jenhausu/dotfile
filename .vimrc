@@ -35,8 +35,10 @@ filetype plugin indent on    " required
 
 syntax enable
 
-set tabstop=4
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set ai "換行自動縮排
 set t_Co=256 "支援２５６色
+set nu
 
 
