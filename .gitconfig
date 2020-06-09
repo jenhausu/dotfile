@@ -5,21 +5,26 @@
 [core]
 	excludesfile = /Users/oyster/.gitignore_global
 [alias]
+	l = log --oneline --graph
 	lg = !"git log --oneline --graph master.."
 	lg2 = !"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 	lg3 = !"git log --graph --abbrev-commit --decorate --date=relative"
 	lg4 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lgs = !"git shortlog --no-merges --graph --abbrev-commit master..."
 	today = log --oneline --graph --since=8.hours
-	co = checkout
-	a = add
-	aa = add .
-	c = commit
-	ca = commit --amend
 	s = status
-	l = log --oneline --graph
+	co = checkout
 	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
 	bd = !"git branch --color=always | fzf --multi --color=dark --cycle --border --ansi | sed 's/*//' | awk '{print $1}' | xargs git branch -d"
+	d = !"git diff $(git diff --name-only | fzf --cycle --border --ansi)"
+	dc = !"git diff --cached $(git diff --cached --name-only | fzf --cycle --border --ansi)"
+	a = add
+	aa = add .
+	ai = !"git status --short | fzf --multi --color=dark --cycle --border --ansi --preview-window=up:70% --preview=\"git diff --color {+2}\" | awk '{print $argv[3]}' | xargs git add"
+	c = commit
+	cv = commit -v
+	ca = commit --amend
+	r = reset
 [diff]
 	colorMoved = zebra
 [merge]
