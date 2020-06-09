@@ -26,7 +26,8 @@ if not functions -q fisher
 end
 
 thefuck --alias | source
-
-set LANG en_US.UTF-8
 starship init fish | source
 
+set LANG en_US.UTF-8
+
+fish_vi_key_bindings
