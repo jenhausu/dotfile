@@ -167,7 +167,8 @@ module.exports = {
     "hyperterm-tabs",
     "hyper-tab-icons",
     "hyper-opacity",
-    "verminal"
+    "verminal",
+    "hyper-rename-tab"
   ],
 
   // in development, you can create a directory under
