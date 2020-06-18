@@ -13,18 +13,22 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___DisplayLogic: class {
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
+    func presentSuccessAlert(message: String)
+    func presentErrorAlert(message: String)
 }
 
-class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
-  
+class ___VARIABLE_sceneName___ViewController: UIViewController {
+    
     var interactor: ___VARIABLE_sceneName___BusinessLogic?
     var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 
+    private var constraintArray: [NSLayoutConstraint] = []
+    
     // MARK: - Object Lifecycle
-
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        
         setup()
     }
 
@@ -47,36 +51,37 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
         router.viewController = viewController
         router.dataStore = interactor
     }
-
-    // MARK: - Routing
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
-        }
-    }
-
+    
     // MARK: - View Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        
+        setupUI()
     }
-
-    // MARK: Do something
-
-    //@IBOutlet weak var nameTextField: UITextField!
-
-    func doSomething() {
-        let request = ___VARIABLE_sceneName___.Something.Request()
-        interactor?.doSomething(request: request)
+    
+    // MARK: - Setup UI
+    
+    private func setupUI() {
+        
     }
+    
+}
 
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
+extension ___VARIABLE_sceneName___ViewController: ___VARIABLE_sceneName___DisplayLogic {
+    
+    func presentSuccessAlert(message: String) {
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "確定", style: .default)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func presentErrorAlert(message: String) {
+        let alert = UIAlertController(title: "錯誤", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "確定", style: .default)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

@@ -10,12 +10,13 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
+import PromiseKit
+import Moya
 
 class ___VARIABLE_sceneName___Worker {
     
-    func doSomeWork() {
-        
-    }
+//    let provider = MoyaProvider<___VARIABLE_sceneName___Request>()
+    
     
 }
