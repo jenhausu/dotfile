@@ -19,4 +19,7 @@ function sync_push
 
 	# Xcode Template
 	cp -r ~/Library/Developer/Xcode/Templates/File\ Templates/  ~/Documents/repository/dotfile/XcodeTemplate
+
+	# Brewfile
+	cp ~/.config/brewfile/Brewfile ~/Documents/repository/dotfile/
 end

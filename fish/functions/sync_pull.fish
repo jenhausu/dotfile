@@ -16,4 +16,7 @@ function sync_pull
 
 	# starship
 	cp ~/Documents/repository/dotfile/starship.toml ~/.config/starship.toml
+
+	# brewfile
+	cp ~/Documents/repository/dotfile/Brewfile ~/.config/brewfile/Brewfile
 end
