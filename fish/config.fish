@@ -31,3 +31,4 @@ starship init fish | source
 set LANG en_US.UTF-8
 
 fish_vi_key_bindings
+if which swiftenv > /dev/null; status --is-interactive; and source (swiftenv init -|psub); end
