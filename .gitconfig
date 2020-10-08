@@ -14,7 +14,10 @@
 	today = log --oneline --graph --since=8.hours
 	s = status
 	co = checkout
+	cp = cherry-pick
+	clear = !"git checkout $(git status | fzf --cycle --border --ansi)"
 	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
+	m = !"git merge $(git branch | fzf --cycle --border --ansi)"
 	bd = !"git branch --color=always | fzf --multi --color=dark --cycle --border --ansi | sed 's/*//' | awk '{print $1}' | xargs git branch -d"
 	d = !"git diff $(git diff --name-only | fzf --cycle --border --ansi)"
 	dc = !"git diff --cached $(git diff --cached --name-only | fzf --cycle --border --ansi)"
