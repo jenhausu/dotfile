@@ -17,9 +17,6 @@ function sync_push
 	# space prompt
 	cp ~/.config/starship.toml ~/Documents/repository/dotfile/
 
-	# Xcode Template
-	cp -r ~/Library/Developer/Xcode/Templates/File\ Templates/  ~/Documents/repository/dotfile/XcodeTemplate
-
 	# Brewfile
 	cp ~/.config/brewfile/Brewfile ~/Documents/repository/dotfile/
 end
