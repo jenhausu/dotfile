@@ -16,9 +16,6 @@ abbr c "clear"
 abbr openb "open -a Brackets"
 abbr opena "open -a Atom"
 
-abbr github "open https://github.com/OsenseTech/brother-ios"
-abbr go google
-
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
     curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
