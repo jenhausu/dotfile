@@ -1,5 +1,14 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+syntax enable
+filetype plugin indent on
+
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set ai "換行自動縮排
+set t_Co=256 "支援２５６色
+set nu
+set shell=/bin/bash
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,13 +41,3 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-syntax enable
-
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set ai "換行自動縮排
-set t_Co=256 "支援２５６色
-set nu
-
-
