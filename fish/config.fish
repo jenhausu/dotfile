@@ -1,20 +1,14 @@
 # abbr
-abbr gs "git status"
 abbr gl "git log"
 abbr glg "git log --oneline --graph --decorate --date=relative"
 abbr gd "git diff"
 abbr gdc "git diff --cached"
 abbr gbd "git branch -D"
-abbr gpm "git pull origin master"
 
-abbr be "bundle exec"
-abbr fastl "bundle exec fastlane"
-abbr cdpro "cd ~/Library/MobileDevice/Provisioning\ Profiles/"
+abbr b "bundle exec"
+abbr fast "bundle exec fastlane"
 
-abbr c "clear"
-
-abbr openb "open -a Brackets"
-abbr opena "open -a Atom"
+abbr openv "open -a Visual\ Studio\ Code"
 
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
@@ -22,7 +16,6 @@ if not functions -q fisher
     fish -c fisher
 end
 
-thefuck --alias | source
 starship init fish | source
 
 set LANG en_US.UTF-8
