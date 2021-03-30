@@ -3,7 +3,6 @@ abbr gl "git log"
 abbr glg "git log --oneline --graph --decorate --date=relative"
 abbr gd "git diff"
 abbr gdc "git diff --cached"
-abbr gbd "git branch -D"
 
 abbr b "bundle exec"
 abbr fast "bundle exec fastlane"
