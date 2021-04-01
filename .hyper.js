@@ -160,12 +160,10 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyper-init",
     "hyperterm-paste",
     "hyper-statusline",
     "hyper-hypest",
     "hyperterm-tabs",
-    "hyper-tab-icons",
     "hyper-opacity",
     "verminal",
     "hyper-rename-tab"
