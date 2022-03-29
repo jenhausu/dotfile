@@ -3,7 +3,7 @@
 
 brew install youtube-dl
 brew install tig
-brew install xclean
+brew install deszip/tools/xclean
 brew install starship
 brew install fzy
 brew cask install hyper
