@@ -2,4 +2,5 @@ humanize_duration.fish
 upto.fish
 fisher.fish
 rvm.fish
-
+_*.fish
+.DS_Store
