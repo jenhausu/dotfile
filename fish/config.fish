@@ -4,6 +4,10 @@ abbr glg "git log --oneline --graph --decorate --date=relative"
 abbr gd "git diff"
 abbr gdc "git diff --cached"
 
+abbr l "exa --icons --all --group-directories-first"
+abbr ll "exa --icons --all --group-directories-first --long --group"
+abbr tree "exa --icons --all --group-directories-first --long --group --tree --level=4 -I=.git --git-ignore"
+
 abbr b "bundle exec"
 abbr fast "bundle exec fastlane"
 
