@@ -19,18 +19,26 @@
 	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
 	m = !"git merge $(git branch | fzf --cycle --border --ansi)"
 	bd = !"git branch --color=always | fzf --multi --color=dark --cycle --border --ansi | sed 's/*//' | awk '{print $1}' | xargs git branch -d"
-	d = !"git diff $(git diff --name-only | fzf --cycle --border --ansi)"
+	d = diff
 	dc = !"git diff --cached $(git diff --cached --name-only | fzf --cycle --border --ansi)"
 	a = add
 	aa = add .
-	ai = !"git status --short | fzf --multi --color=dark --cycle --border --ansi --preview-window=up:70% --preview=\"git diff --color {+2}\" | awk '{print $argv[3]}' | xargs git add"
-	c = commit
+	ai = !"git status --short | fzf --multi --color=dark --cycle --border --ansi --preview-window=down:70% --preview=\"git diff --color {+2}\" | awk '{print $argv[3]}' | xargs git add"
+	c = cz commit
 	cv = commit -v
 	ca = commit --amend
 	r = reset
+	rc = rebase --continue
 [diff]
 	colorMoved = zebra
 [merge]
 	ff = false
 [color]
 	ui = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = master
