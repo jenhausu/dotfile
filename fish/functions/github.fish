@@ -4,5 +4,8 @@ function github -d "Open current repository github page."
 				sed -e 's/ssh\/\/\///g' |
 				sed -e 's/git@/https:\/\//g' |
 				sed 's/....$//')
+	if set -q argv[1] && test $argv[1] = action
+		set url $url/actions
+	end
 	open -a Safari $url
 end
