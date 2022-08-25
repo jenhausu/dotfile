@@ -24,3 +24,5 @@ starship init fish | source
 set LANG en_US.UTF-8
 
 fish_vi_key_bindings
+
+thefuck --alias | source
