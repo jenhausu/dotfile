@@ -26,6 +26,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'ntpeters/vim-better-whitespace'
 Bundle 'vim-ruby/vim-ruby'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
