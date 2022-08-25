@@ -13,9 +13,5 @@ stashed = "S"
 [ruby]
 style = "red"
 
-[memory_usage]
-disabled = false
-show_percentage = true
-
 [cmd_duration]
 disabled = true
