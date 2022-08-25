@@ -6,4 +6,6 @@ function gitcheck -w "git checkout" -d "pod install after git check"
         echo "pod install..."
         bundle exec pod install
     end
+
+    git status
 end
