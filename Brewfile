@@ -24,7 +24,7 @@ cask "proxyman"
 cask "shottr"
 cask "macdown"
 
-brew mas
+brew "mas"
 mas "PiPifier", id: 1160374471
 mas "Octotree", id: 1457450145
 mas "Slack", id: 803453959
