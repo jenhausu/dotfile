@@ -13,13 +13,12 @@ brew "swiftlint"
 brew "thefuck"
 brew "tig"
 brew "robotsandpencils/made/xcodes"
-brew "xclean"
-brew "set-simulator-location"
+brew "deszip/tools/xclean"
+brew "lyft/formulae/set-simulator-location"
 
 cask "font-fira-code"
 cask "monitorcontrol"
 cask "rectangle"
-cask "hyper"
 cask "proxyman"
 cask "shottr"
 cask "macdown"
@@ -35,3 +34,5 @@ mas "Eye Monitor", id: 1527031341
 mas "DevCleaner", id: 1388020431
 mas "RocketSim", id: 1504940162
 mas "Intermission", id: 1439431081
+mas "Cleaner for Xcode", id: 1296084683
+mas "OS Cleaner", id: 1005062168
