@@ -33,6 +33,5 @@ mas "XCOrganizer", id: 1507556912
 mas "Eye Monitor", id: 1527031341
 mas "DevCleaner", id: 1388020431
 mas "RocketSim", id: 1504940162
-mas "Intermission", id: 1439431081
 mas "Cleaner for Xcode", id: 1296084683
 mas "OS Cleaner", id: 1005062168
