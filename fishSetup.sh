@@ -17,3 +17,4 @@ brew install terminal-notifier
 fisher install franciscolourenco/done
 fisher install markcial/upto
 fisher install acomagu/fish-async-prompt
+fisher install andreiborisov/sponge # make command history clear
