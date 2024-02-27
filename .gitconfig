@@ -1,22 +1,21 @@
 # This is Git's per-user configuration file.
 [user]
 	name = 蘇健豪
-	email = jenhausu@osensetech.com
+	email = jenhau.su@ichef.com.tw
 [core]
 	excludesfile = /Users/oyster/.gitignore_global
 [alias]
 	l = log --oneline --graph
-	lg = !"git log --oneline --graph master.."
+	lg = !"git log --oneline --graph develop.."
 	lg2 = !"git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 	lg3 = !"git log --graph --abbrev-commit --decorate --date=relative"
 	lg4 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lgs = !"git shortlog --no-merges --graph --abbrev-commit master..."
+	lgs = !"git shortlog --no-merges --graph --abbrev-commit develop..."
 	today = log --oneline --graph --since=8.hours
 	s = status
-	co = checkout
 	clear = !"git diff --name-only | fzf --multi --color=dark --cycle --border --ansi --preview-window=up:70% --preview=\"git diff --color {+1}\" | xargs git checkout"
 	cp = cherry-pick
-	b = !"git checkout $(git branch | fzf --cycle --border --ansi)"
+	co = !"git checkout $(git branch | fzf --cycle --border --ansi)"
 	m = !"git merge $(git branch | fzf --cycle --border --ansi)"
 	bd = !"git branch --color=always | fzf --multi --color=dark --cycle --border --ansi | sed 's/*//' | awk '{print $1}' | xargs git branch -d"
 	d = !"git diff $(git diff --name-only | fzf --cycle --border --ansi)"
@@ -30,7 +29,7 @@
 	r = reset
 [diff]
 	colorMoved = zebra
-[merge]
-	ff = false
 [color]
 	ui = true
+[init]
+	defaultBranch = master
