@@ -1,0 +1,18 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/oyster/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-02-10T08:51:23.637Z"
+  },
+  "voltagent-subagents": {
+    "source": {
+      "source": "github",
+      "repo": "VoltAgent/awesome-claude-code-subagents"
+    },
+    "installLocation": "/Users/oyster/.claude/plugins/marketplaces/voltagent-subagents",
+    "lastUpdated": "2026-01-28T05:00:40.299Z"
+  }
+}

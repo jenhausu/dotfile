@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "plugins": {
+    "swift-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/swift-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-19T03:10:33.482Z",
+        "lastUpdated": "2026-01-19T03:10:33.482Z"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-20T05:35:35.678Z",
+        "lastUpdated": "2026-01-20T05:35:35.678Z",
+        "gitCommitSha": "96276205880a60fd66bbae981f5ab568e70c4cbf"
+      }
+    ],
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/code-review/2cd88e7947b7",
+        "version": "2cd88e7947b7",
+        "installedAt": "2026-01-23T08:00:37.568Z",
+        "lastUpdated": "2026-02-09T04:24:41.947Z",
+        "gitCommitSha": "e30768372b4150ca1bc0839d93283e8edc30d60d"
+      }
+    ],
+    "ralph-loop@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/ralph-loop/2cd88e7947b7",
+        "version": "2cd88e7947b7",
+        "installedAt": "2026-01-23T08:23:31.207Z",
+        "lastUpdated": "2026-02-09T04:24:41.953Z",
+        "gitCommitSha": "e30768372b4150ca1bc0839d93283e8edc30d60d"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-23T09:07:42.731Z",
+        "lastUpdated": "2026-01-23T09:07:42.731Z",
+        "gitCommitSha": "e30768372b4150ca1bc0839d93283e8edc30d60d"
+      }
+    ],
+    "feature-dev@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/feature-dev/2cd88e7947b7",
+        "version": "2cd88e7947b7",
+        "installedAt": "2026-01-23T09:07:42.731Z",
+        "lastUpdated": "2026-02-09T04:24:41.950Z",
+        "gitCommitSha": "e30768372b4150ca1bc0839d93283e8edc30d60d"
+      }
+    ],
+    "commit-commands@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/claude-plugins-official/commit-commands/2cd88e7947b7",
+        "version": "2cd88e7947b7",
+        "installedAt": "2026-01-23T09:07:42.731Z",
+        "lastUpdated": "2026-02-09T04:24:41.955Z",
+        "gitCommitSha": "e30768372b4150ca1bc0839d93283e8edc30d60d"
+      }
+    ],
+    "voltagent-lang@voltagent-subagents": [
+      {
+        "scope": "user",
+        "installPath": "/Users/oyster/.claude/plugins/cache/voltagent-subagents/voltagent-lang/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-28T05:03:29.027Z",
+        "lastUpdated": "2026-01-28T05:03:29.027Z",
+        "gitCommitSha": "cc016083d3cf83ef45b8e6ac143d929ff281dcb2"
+      }
+    ]
+  }
+}
